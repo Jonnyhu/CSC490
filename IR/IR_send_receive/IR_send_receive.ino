@@ -1,6 +1,6 @@
-#define IRpin_PIN      PIND
-#define IRpin          2
-#define IRledPin       13
+  #define IRpin_PIN      PIND
+#define IRpin          13
+#define IRledPin       2
 
 // the brightness of the IR Red
 #define POWER 130
@@ -132,7 +132,6 @@ void pulseIR(long microsecs) {
 void SendNikonCode() {
   // This is the code for my particular Nikon, for others use the tutorial
   // to 'grab' the proper code from the remote
-  
   pulseIR(255);
   delay(10);
   pulseIR(55);
