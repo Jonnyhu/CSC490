@@ -132,23 +132,20 @@ void pulseIR(long microsecs) {
 void SendNikonCode() {
   // This is the code for my particular Nikon, for others use the tutorial
   // to 'grab' the proper code from the remote
- 
-  pulseIR(2080);
-  delay(27);
-  pulseIR(440);
-  delayMicroseconds(1500);
-  pulseIR(460);
-  delayMicroseconds(3440);
-  pulseIR(480);
+  
+  pulseIR(255);
+  delay(10);
+  pulseIR(55);
+  delay(10);
+  pulseIR(0);
+  //pulseIR(2000);
+  //delay(27);
+  //pulseIR(440);
+  //delayMicroseconds(1500);
+  //pulseIR(460);
+  //delayMicroseconds(3440);
+  //pulseIR(480);
  
  
   delay(65); // wait 65 milliseconds before sending it again
- 
-  pulseIR(2000);
-  delay(27);
-  pulseIR(440);
-  delayMicroseconds(1500);
-  pulseIR(460);
-  delayMicroseconds(3440);
-  pulseIR(480);
 }
