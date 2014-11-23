@@ -27,15 +27,15 @@ void setup(void) {
 }
 
 void loop(void) {
-  SendNikonCode();
-  /*int numberpulses;
+  //SendNikonCode();
+  int numberpulses;
   
   numberpulses = listenForIR();
   
   Serial.print("Heard ");
   Serial.print(numberpulses);
   Serial.println("-pulse long IR signal");
-  delay(500);*/
+  delay(500);
   
 }
 
